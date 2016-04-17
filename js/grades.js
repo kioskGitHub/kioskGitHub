@@ -19,7 +19,7 @@ function loadXMLDoc(ID)
     }
   };
 
-  xhttp.open("GET", "http://localhost/sampleGrades.xml", true);
+  xhttp.open("GET", "http://localhost/sampleGradesFinal.xml", true);
   xhttp.send();
 
 }
