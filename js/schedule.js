@@ -1,5 +1,5 @@
 //********NEED TO MAKE DYNAMIC FROM THE RFID SCANNER
-var studentID = "1850";
+var studentID = "4719";
 
 //####################################
 //load the name and id with student id
@@ -135,6 +135,6 @@ function myFunction(xml, sID)
   }
 
   //add to html
-  document.getElementById("schedule-box").innerHTML = userName;
+  document.getElementById("userName").innerHTML = userName;
   document.getElementById("termName").innerHTML = termName;
 }

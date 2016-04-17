@@ -1,5 +1,5 @@
 //********NEED TO MAKE DYNAMIC FROM THE RFID SCANNER
-var studentID = "1850";
+var studentID = "4719";
 
 //####################################
 //load the name and id with student id
@@ -42,6 +42,7 @@ function myFunction(xml, sID)
       programName = details[d].getAttribute('Program_Name');
       studentFName = details[d].getAttribute('Student_First_Name');
       studentLName = details[d].getAttribute('Student_Last_Name');
+      document.getElementById('userName').innerHTML = studentFName + " " + studentLName;
       className = details[d].parentNode.parentNode.parentNode.getAttribute('Textbox25');
       switch (m)
       {
