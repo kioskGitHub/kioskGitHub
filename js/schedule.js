@@ -19,7 +19,7 @@ function loadXMLDoc(ID)
     }
   };
 
-  xhttp.open("GET", "http://localhost/BulkStudentSchedulesbyTerm.xml", true);
+  xhttp.open("GET", "http://localhost/xmlFiles/BulkStudentSchedulesbyTerm.xml", true);
   xhttp.send();
 
 }
