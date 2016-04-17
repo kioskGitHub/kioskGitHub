@@ -1,5 +1,5 @@
 //********NEED TO MAKE DYNAMIC FROM THE RFID SCANNER
-var studentID = "4719";
+var studentID = "1850";
 
 //####################################
 //load the name and id with student id
