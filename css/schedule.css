@@ -83,13 +83,13 @@
     left: 28%;
 }
 #normalHours {
-  z-index: 40;
-  position: fixed;
-  width: 6%;
-  height: 10%;
-  right: 1%;
-  top: 20%;
-  background-color: #2B71B9;
+    z-index: 40;
+    position: fixed;
+    width: 6%;
+    height: 10%;
+    right: 1%;
+    top: 20%;
+    background-color: #2B71B9;
 }
 #hour2 {
     z-index: 40;
