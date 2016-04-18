@@ -82,13 +82,23 @@
     bottom: auto;
     left: 28%;
 }
+#normalHours {
+  z-index: 40;
+  position: fixed;
+  width: 6%;
+  height: 10%;
+  right: 1%;
+  top: 20%;
+  background-color: #2B71B9;
+}
 #hour2 {
     z-index: 40;
     position: fixed;
     width: 6%;
     height: 10%;
     right: 1%;
-    top: 20%;
+    top: 45%;
+    background-color: #FFA500;
 }
 #hour3 {
     z-index: 40;
@@ -96,7 +106,8 @@
     width: 6%;
     height: 10%;
     right: 1%;
-    top: 40%;
+    top: 70%;
+    background-color: #FFFF00;
 }
 #userName {
     position: absolute;
@@ -238,6 +249,7 @@ html, body {
 }
 .periods {
     padding-top: 1%;
+    color: #2B71B9;
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
