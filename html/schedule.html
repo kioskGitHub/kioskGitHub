@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Schedule</title>
+    <script src="../js/patternWeeklyLogic.js"></script>
+    <script src="../js/delays.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/schedule.css" />
+</head>
+
+<body id="background">
+    <p id="day"></p>
+    <p id="time"></p>
+    <div class="button-container">
+        <a id="back" href="../index.html" class="button-3d">Back</a>
+        <a id="print" href="" class="button-3d">Print</a>
+        <a id="done" href="" class="button-3d">Done</a>
+        <button id="normalHours" class="button-3d" onclick="normalHours()">Normal Hours</button>
+        <button id="hour2" class="button-3d" onclick="twoHourDelay()">Two Hour Delay</button>
+        <button id="hour3" class="button-3d" onclick="threeHourDelay()">Three Hour Delay</button>
+    </div>
+    <div id="test">
+        <p id="userName"></p>
+        <p id="termName"></p>
+    </div>
+    <div class="grid">
+        <div class="section group" style="text-align: Center;">
+            <div class="span_left_column" id="topLeft">&nbsp;</div>
+            <div class="col span_1_of_5">Monday</div>
+            <div class="col span_1_of_5">Tuesday</div>
+            <div class="col span_1_of_5">Wednesday</div>
+            <div class="col span_1_of_5">Thursday</div>
+            <div class="col span_1_of_5">Friday</div>
+        </div>
+        <div class="section group">
+            <div id="period1" class="span_left_column periods" style="text-align:Center;">
+                <div>1st</div>
+                <div class="periodTime" id="period1first">8:00am</div>
+                <div class="periodTime">TO</div>
+                <div class="periodTime" id="period1second">8:50am</div>
+            </div>
+            <div class="col span_1_of_5" id="one1">
+                <p class="pTags" id="course11">Break</p>
+                <p class="pTags" id="instructor11"></p>
+                <p class="pTags" id="building11"></p>
+                <p class="pTags" id="room11"></p>
+            </div>
+            <div class="col span_1_of_5" id="one2">
+                <p class="pTags" id="course12">Break</p>
+                <p class="pTags" id="instructor12"></p>
+                <p class="pTags" id="building12"></p>
+                <p class="pTags" id="room12"></p>
+            </div>
+            <div class="col span_1_of_5" id="one3">
+                <p class="pTags" id="course13">Break</p>
+                <p class="pTags" id="instructor13"></p>
+                <p class="pTags" id="building13"></p>
+                <p class="pTags" id="room13"></p>
+            </div>
+            <div class="col span_1_of_5" id="one4">
+                <p class="pTags" id="course14">Break</p>
+                <p class="pTags" id="instructor14"></p>
+                <p class="pTags" id="building14"></p>
+                <p class="pTags" id="room14"></p>
+            </div>
+            <div class="col span_1_of_5" id="one5">
+                <p class="pTags" id="course15">Break</p>
+                <p class="pTags" id="instructor15"></p>
+                <p class="pTags" id="building15"></p>
+                <p class="pTags" id="room15"></p>
+            </div>
+        </div>
+        <div class="section group">
+            <div id="period2" class="span_left_column periods" style="text-align:Center;">
+                <div>2nd</div>
+                <div class="periodTime" id="period2first">9:00am</div>
+                <div class="periodTime">TO</div>
+                <div class="periodTime" id="period2second">9:50am</div>
+            </div>
+            <div class="col span_1_of_5" id="two1">
+                <p class="pTags" id="course21">Break</p>
+                <p class="pTags" id="instructor21"></p>
+                <p class="pTags" id="building21"></p>
+                <p class="pTags" id="room21"></p>
+            </div>
+            <div class="col span_1_of_5" id="two2">
+                <p class="pTags" id="course22">Break</p>
+                <p class="pTags" id="instructor22"></p>
+                <p class="pTags" id="building22"></p>
+                <p class="pTags" id="room22"></p>
+            </div>
+            <div class="col span_1_of_5" id="two3">
+                <p class="pTags" id="course23">Break</p>
+                <p class="pTags" id="instructor23"></p>
+                <p class="pTags" id="building23"></p>
+                <p class="pTags" id="room23"></p>
+            </div>
+            <div class="col span_1_of_5" id="two4">
+                <p class="pTags" id="course24">Break</p>
+                <p class="pTags" id="instructor24"></p>
+                <p class="pTags" id="building24"></p>
+                <p class="pTags" id="room24"></p>
+            </div>
+            <div class="col span_1_of_5" id="two5">
+                <p class="pTags" id="course25">Break</p>
+                <p class="pTags" id="instructor25"></p>
+                <p class="pTags" id="building25"></p>
+                <p class="pTags" id="room25"></p>
+            </div>
+        </div>
+        <div class="section group">
+            <div id="period3" class="span_left_column periods" style="text-align:Center;">
+                <div>3rd</div>
+                <div class="periodTime" id="period3first">10:00am</div>
+                <div class="periodTime">TO</div>
+                <div class="periodTime" id="period3second">10:50am</div>
+            </div>
+            <div class="col span_1_of_5" id="three1">
+                <p class="pTags" id="course31">Break</p>
+                <p class="pTags" id="instructor31"></p>
+                <p class="pTags" id="building31"></p>
+                <p class="pTags" id="room31"></p>
+            </div>
+            <div class="col span_1_of_5" id="three2">
+                <p class="pTags" id="course32">Break</p>
+                <p class="pTags" id="instructor32"></p>
+                <p class="pTags" id="building32"></p>
+                <p class="pTags" id="room32"></p>
+            </div>
+            <div class="col span_1_of_5" id="three3">
+                <p class="pTags" id="course33">Break</p>
+                <p class="pTags" id="instructor33"></p>
+                <p class="pTags" id="building33"></p>
+                <p class="pTags" id="room33"></p>
+            </div>
+            <div class="col span_1_of_5" id="three4">
+                <p class="pTags" id="course34">Break</p>
+                <p class="pTags" id="instructor34"></p>
+                <p class="pTags" id="building34"></p>
+                <p class="pTags" id="room34"></p>
+            </div>
+            <div class="col span_1_of_5" id="three5">
+                <p class="pTags" id="course35">Break</p>
+                <p class="pTags" id="instructor35"></p>
+                <p class="pTags" id="building35"></p>
+                <p class="pTags" id="room35"></p>
+            </div>
+        </div>
+        <div class="section group" id="lunch">
+            <div class="span_left_column" id="lunch0delay"></div>
+            <div class="span_1_of_5" id="lunch1delay"></div>
+            <div class="span_1_of_5" id="lunch2delay"></div>
+            <div class="span_1_of_5" id="lunch3delay"></div>
+            <div class="span_1_of_5" id="lunch4delay"></div>
+            <div class="span_1_of_5" id="lunch5delay"></div>
+        </div>
+        <div class="section group">
+            <div id="period4" class="span_left_column periods" style="text-align:Center;">
+                <div>4th</div>
+                <div class="periodTime" id="period4first">11:00am</div>
+                <div class="periodTime">TO</div>
+                <div class="periodTime" id="period4second">11:50am</div>
+            </div>
+            <div class="col span_1_of_5" id="four1">
+                <p class="pTags" id="course41">Break</p>
+                <p class="pTags" id="instructor41"></p>
+                <p class="pTags" id="building41"></p>
+                <p class="pTags" id="room41"></p>
+            </div>
+            <div class="col span_1_of_5" id="four2">
+                <p class="pTags" id="course42">Break</p>
+                <p class="pTags" id="instructor42"></p>
+                <p class="pTags" id="building42"></p>
+                <p class="pTags" id="room42"></p>
+            </div>
+            <div class="col span_1_of_5" id="four3">
+                <p class="pTags" id="course43">Break</p>
+                <p class="pTags" id="instructor43"></p>
+                <p class="pTags" id="building43"></p>
+                <p class="pTags" id="room43"></p>
+            </div>
+            <div class="col span_1_of_5" id="four4">
+                <p class="pTags" id="course44">Break</p>
+                <p class="pTags" id="instructor44"></p>
+                <p class="pTags" id="building44"></p>
+                <p class="pTags" id="room44"></p>
+            </div>
+            <div class="col span_1_of_5" id="four5">
+                <p class="pTags" id="course45">Break</p>
+                <p class="pTags" id="instructor45"></p>
+                <p class="pTags" id="building45"></p>
+                <p class="pTags" id="room45"></p>
+            </div>
+        </div>
+        <div class="section group" id="lunch">
+            <div class="span_left_column" id="lunch0">&nbsp;</div>
+            <div class="col span_1_of_5" id="lunch1">Common Hour</div>
+            <div class="col span_1_of_5" id="lunch2">Common Hour</div>
+            <div class="col span_1_of_5" id="lunch3">Common Hour</div>
+            <div class="col span_1_of_5" id="lunch4">Common Hour</div>
+            <div class="col span_1_of_5" id="lunch5">Common Hour</div>
+        </div>
+        <div class="section group">
+            <div id="period5" class="span_left_column periods" style="text-align:Center;">
+                <div>5th</div>
+                <div class="periodTime" id="period5first">1:00pm</div>
+                <div class="periodTime">TO</div>
+                <div class="periodTime" id="period5second">1:50pm</div>
+            </div>
+            <div class="col span_1_of_5" id="five1">
+                <p class="pTags" id="course51">Break</p>
+                <p class="pTags" id="instructor51"></p>
+                <p class="pTags" id="building51"></p>
+                <p class="pTags" id="room51"></p>
+            </div>
+            <div class="col span_1_of_5" id="five2">
+                <p class="pTags" id="course52">Break</p>
+                <p class="pTags" id="instructor52"></p>
+                <p class="pTags" id="building52"></p>
+                <p class="pTags" id="room52"></p>
+            </div>
+            <div class="col span_1_of_5" id="five3">
+                <p class="pTags" id="course53">Break</p>
+                <p class="pTags" id="instructor53"></p>
+                <p class="pTags" id="building53"></p>
+                <p class="pTags" id="room53"></p>
+            </div>
+            <div class="col span_1_of_5" id="five4">
+                <p class="pTags" id="course54">Break</p>
+                <p class="pTags" id="instructor54"></p>
+                <p class="pTags" id="building54"></p>
+                <p class="pTags" id="room54"></p>
+            </div>
+            <div class="col span_1_of_5" id="five5">
+                <p class="pTags" id="course55">Break</p>
+                <p class="pTags" id="instructor55"></p>
+                <p class="pTags" id="building55"></p>
+                <p class="pTags" id="room55"></p>
+            </div>
+        </div>
+        <div class="section group">
+            <div id="period6" class="span_left_column periods" style="text-align:Center;">
+                <div>6th</div>
+                <div class="periodTime" id="period6first">2:00pm</div>
+                <div class="periodTime">TO</div>
+                <div class="periodTime" id="period6second">2:50pm</div>
+            </div>
+            <div class="col span_1_of_5" id="six1">
+                <p class="pTags" id="course61">Break</p>
+                <p class="pTags" id="instructor61"></p>
+                <p class="pTags" id="building61"></p>
+                <p class="pTags" id="room61"></p>
+            </div>
+            <div class="col span_1_of_5" id="six2">
+                <p class="pTags" id="course62">Break</p>
+                <p class="pTags" id="instructor62"></p>
+                <p class="pTags" id="building62"></p>
+                <p class="pTags" id="room62"></p>
+            </div>
+            <div class="col span_1_of_5" id="six3">
+                <p class="pTags" id="course63">Break</p>
+                <p class="pTags" id="instructor63"></p>
+                <p class="pTags" id="building63"></p>
+                <p class="pTags" id="room63"></p>
+            </div>
+            <div class="col span_1_of_5" id="six4">
+                <p class="pTags" id="course64">Break</p>
+                <p class="pTags" id="instructor64"></p>
+                <p class="pTags" id="building64"></p>
+                <p class="pTags" id="room64"></p>
+            </div>
+            <div class="col span_1_of_5" id="six5">
+                <p class="pTags" id="course65">Break</p>
+                <p class="pTags" id="instructor65"></p>
+                <p class="pTags" id="building65"></p>
+                <p class="pTags" id="room65"></p>
+            </div>
+        </div>
+        <div class="section group">
+            <div id="period7" class="span_left_column periods" style="text-align:Center;">
+                <div>7th</div>
+                <div class="periodTime" id="period7first">3:00pm</div>
+                <div class="periodTime">TO</div>
+                <div class="periodTime" id="period7second">3:50pm</div>
+            </div>
+            <div class="col span_1_of_5" id="seven1">
+                <p class="pTags" id="course71">Break</p>
+                <p class="pTags" id="instructor71"></p>
+                <p class="pTags" id="building71"></p>
+                <p class="pTags" id="room71"></p>
+            </div>
+            <div class="col span_1_of_5" id="seven2">
+                <p class="pTags" id="course72">Break</p>
+                <p class="pTags" id="instructor72"></p>
+                <p class="pTags" id="building72"></p>
+                <p class="pTags" id="room72"></p>
+            </div>
+            <div class="col span_1_of_5" id="seven3">
+                <p class="pTags" id="course73">Break</p>
+                <p class="pTags" id="instructor73"></p>
+                <p class="pTags" id="building73"></p>
+                <p class="pTags" id="room73"></p>
+            </div>
+            <div class="col span_1_of_5" id="seven4">
+                <p class="pTags" id="course74">Break</p>
+                <p class="pTags" id="instructor74"></p>
+                <p class="pTags" id="building74"></p>
+                <p class="pTags" id="room74"></p>
+            </div>
+            <div class="col span_1_of_5" id="seven5">
+                <p class="pTags" id="course75">Break</p>
+                <p class="pTags" id="instructor75"></p>
+                <p class="pTags" id="building75"></p>
+                <p class="pTags" id="room75"></p>
+            </div>
+        </div>
+        <div class="section group">
+            <div id="period8" class="span_left_column periods" style="text-align:Center;">
+                <div>8th</div>
+                <div class="periodTime" id="period8first">4:00pm</div>
+                <div class="periodTime">TO</div>
+                <div class="periodTime" id="period8second">4:50pm</div>
+            </div>
+            <div class="col span_1_of_5" id="eight1">
+                <p class="pTags" id="course81">Break</p>
+                <p class="pTags" id="instructor81"></p>
+                <p class="pTags" id="building81"></p>
+                <p class="pTags" id="room81"></p>
+            </div>
+            <div class="col span_1_of_5" id="eight2">
+                <p class="pTags" id="course82">Break</p>
+                <p class="pTags" id="instructor82"></p>
+                <p class="pTags" id="building82"></p>
+                <p class="pTags" id="room82"></p>
+            </div>
+            <div class="col span_1_of_5" id="eight3">
+                <p class="pTags" id="course83">Break</p>
+                <p class="pTags" id="instructor83"></p>
+                <p class="pTags" id="building83"></p>
+                <p class="pTags" id="room83"></p>
+            </div>
+            <div class="col span_1_of_5" id="eight4">
+                <p class="pTags" id="course84">Break</p>
+                <p class="pTags" id="instructor84"></p>
+                <p class="pTags" id="building84"></p>
+                <p class="pTags" id="room84"></p>
+            </div>
+            <div class="col span_1_of_5" id="eight5">
+                <p class="pTags" id="course85">Break</p>
+                <p class="pTags" id="instructor85"></p>
+                <p class="pTags" id="building85"></p>
+                <p class="pTags" id="room85"></p>
+            </div>
+        </div>
+    </div>
+    <div class="button-container2">
+        <a id="backBottom" href="../index.html" class="button-3d">Back</a>
+        <a id="printBottom" href="" class="button-3d">Print</a>
+        <a id="doneBottom" href="" class="button-3d">Done</a>
+    </div>
+    <script src="../js/schedule.js"></script>
+</body>
+
+</html>
