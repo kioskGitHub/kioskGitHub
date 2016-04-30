@@ -1,2 +1,0 @@
-# kioskGitHub
-web kiosk software
