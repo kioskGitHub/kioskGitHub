@@ -43,7 +43,7 @@
     font-family: 'Candal', cursive;
 }
 #scheduleButton, #gradesButton {
-  margin-top: 18%;
+    margin-top: 18%;
 }
 #grades {
     position: fixed;

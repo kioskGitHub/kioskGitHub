@@ -14,7 +14,7 @@ function dateAndTime()
       return (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" +
         ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" +
         this.getFullYear();
-    }
+    };
     //the time now
   Date.prototype.timeNow = function()
   {
@@ -23,7 +23,7 @@ function dateAndTime()
       ((this.getMinutes() < 10) ? "0" : "") +
       this.getMinutes() +
       ((this.getHours() > 12) ? ('PM') : 'AM');
-  }
+  };
   datetime = currentDate.timeNow();
   today = currentDate.today();
   document.getElementById("day").innerHTML = today;
