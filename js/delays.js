@@ -122,7 +122,8 @@ function twoHourDelay() {
             document.getElementById("four1").style.borderColor = "";
             document.getElementById("four1").style.borderWidth = "thin";
             document.getElementById("four1").style.margin = "";
-        } else if ((hour == 11) && (minutes < 25)) {
+        }
+        else if ((hour == 11) && (minutes < 25)) {
             document.getElementById("one1").style.borderColor = "#FF0000";
             document.getElementById("one1").style.borderWidth = "thick";
             document.getElementById("one1").style.margin = "-4px";
@@ -174,7 +175,8 @@ function twoHourDelay() {
             document.getElementById("five1").style.borderColor = "#FFFF00";
             document.getElementById("five1").style.borderWidth = "thick";
             document.getElementById("five1").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 20)) {
+        }
+        else if ((hour == 1) && (minutes < 20)) {
             document.getElementById("three1").style.borderColor = "#FF0000";
             document.getElementById("three1").style.borderWidth = "thick";
             document.getElementById("three1").style.margin = "-4px";
@@ -230,7 +232,8 @@ function twoHourDelay() {
             document.getElementById("eight1").style.borderWidth = "thick";
             document.getElementById("eight1").style.margin = "-4px";
         }
-    } else if (dayOfWeek == "Tuesday") {
+    }
+    else if (dayOfWeek == "Tuesday") {
         //1st period
         if ((hour == 10) && (minutes < 40)) {
             document.getElementById("one2").style.borderColor = "#78F000";
@@ -260,7 +263,8 @@ function twoHourDelay() {
             document.getElementById("four2").style.borderColor = "";
             document.getElementById("four2").style.borderWidth = "thin";
             document.getElementById("four2").style.margin = "";
-        } else if ((hour == 11) && (minutes < 25)) {
+        }
+        else if ((hour == 11) && (minutes < 25)) {
             document.getElementById("one2").style.borderColor = "#FF0000";
             document.getElementById("one2").style.borderWidth = "thick";
             document.getElementById("one2").style.margin = "-4px";
@@ -312,7 +316,8 @@ function twoHourDelay() {
             document.getElementById("five2").style.borderColor = "#FFFF00";
             document.getElementById("five2").style.borderWidth = "thick";
             document.getElementById("five2").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 20)) {
+        }
+        else if ((hour == 1) && (minutes < 20)) {
             document.getElementById("three2").style.borderColor = "#FF0000";
             document.getElementById("three2").style.borderWidth = "thick";
             document.getElementById("three2").style.margin = "-4px";
@@ -368,7 +373,8 @@ function twoHourDelay() {
             document.getElementById("eight2").style.borderWidth = "thick";
             document.getElementById("eight2").style.margin = "-4px";
         }
-    } else if (dayOfWeek == "Wednesday") {
+    }
+    else if (dayOfWeek == "Wednesday") {
         //1st period
         if ((hour == 10) && (minutes < 40)) {
             document.getElementById("one3").style.borderColor = "#78F000";
@@ -398,7 +404,8 @@ function twoHourDelay() {
             document.getElementById("four3").style.borderColor = "";
             document.getElementById("four3").style.borderWidth = "thin";
             document.getElementById("four3").style.margin = "";
-        } else if ((hour == 11) && (minutes < 25)) {
+        }
+        else if ((hour == 11) && (minutes < 25)) {
             document.getElementById("one3").style.borderColor = "#FF0000";
             document.getElementById("one3").style.borderWidth = "thick";
             document.getElementById("one3").style.margin = "-4px";
@@ -450,7 +457,8 @@ function twoHourDelay() {
             document.getElementById("five3").style.borderColor = "#FFFF00";
             document.getElementById("five3").style.borderWidth = "thick";
             document.getElementById("five3").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 20)) {
+        }
+        else if ((hour == 1) && (minutes < 20)) {
             document.getElementById("three3").style.borderColor = "#FF0000";
             document.getElementById("three3").style.borderWidth = "thick";
             document.getElementById("three3").style.margin = "-4px";
@@ -506,7 +514,8 @@ function twoHourDelay() {
             document.getElementById("eight3").style.borderWidth = "thick";
             document.getElementById("eight3").style.margin = "-4px";
         }
-    } else if (dayOfWeek == "Thursday") {
+    }
+    else if (dayOfWeek == "Thursday") {
         //1st period
         if ((hour == 10) && (minutes < 40)) {
             document.getElementById("one4").style.borderColor = "#78F000";
@@ -536,7 +545,8 @@ function twoHourDelay() {
             document.getElementById("four4").style.borderColor = "";
             document.getElementById("four4").style.borderWidth = "thin";
             document.getElementById("four4").style.margin = "";
-        } else if ((hour == 11) && (minutes < 25)) {
+        }
+        else if ((hour == 11) && (minutes < 25)) {
             document.getElementById("one4").style.borderColor = "#FF0000";
             document.getElementById("one4").style.borderWidth = "thick";
             document.getElementById("one4").style.margin = "-4px";
@@ -588,7 +598,8 @@ function twoHourDelay() {
             document.getElementById("five4").style.borderColor = "#FFFF00";
             document.getElementById("five4").style.borderWidth = "thick";
             document.getElementById("five4").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 20)) {
+        }
+        else if ((hour == 1) && (minutes < 20)) {
             document.getElementById("three4").style.borderColor = "#FF0000";
             document.getElementById("three4").style.borderWidth = "thick";
             document.getElementById("three4").style.margin = "-4px";
@@ -644,7 +655,8 @@ function twoHourDelay() {
             document.getElementById("eight4").style.borderWidth = "thick";
             document.getElementById("eight4").style.margin = "-4px";
         }
-    } else if (dayOfWeek == "Friday") {
+    }
+    else if (dayOfWeek == "Friday") {
         //1st period
         if ((hour == 10) && (minutes < 40)) {
             document.getElementById("one5").style.borderColor = "#78F000";
@@ -674,7 +686,8 @@ function twoHourDelay() {
             document.getElementById("four5").style.borderColor = "";
             document.getElementById("four5").style.borderWidth = "thin";
             document.getElementById("four5").style.margin = "";
-        } else if ((hour == 11) && (minutes < 25)) {
+        }
+        else if ((hour == 11) && (minutes < 25)) {
             document.getElementById("one5").style.borderColor = "#FF0000";
             document.getElementById("one5").style.borderWidth = "thick";
             document.getElementById("one5").style.margin = "-4px";
@@ -726,7 +739,8 @@ function twoHourDelay() {
             document.getElementById("five5").style.borderColor = "#FFFF00";
             document.getElementById("five5").style.borderWidth = "thick";
             document.getElementById("five5").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 20)) {
+        }
+        else if ((hour == 1) && (minutes < 20)) {
             document.getElementById("three5").style.borderColor = "#FF0000";
             document.getElementById("three5").style.borderWidth = "thick";
             document.getElementById("three5").style.margin = "-4px";
@@ -870,7 +884,8 @@ function threeHourDelay() {
             document.getElementById("five1").style.borderColor = "";
             document.getElementById("five1").style.borderWidth = "thin";
             document.getElementById("five1").style.margin = "";
-        } else if ((hour == 12) && (minutes < 15)) {
+        }
+        else if ((hour == 12) && (minutes < 15)) {
             document.getElementById("one1").style.borderColor = "#FF0000";
             document.getElementById("one1").style.borderWidth = "thick";
             document.getElementById("one1").style.margin = "-4px";
@@ -916,7 +931,8 @@ function threeHourDelay() {
             document.getElementById("five1").style.borderColor = "#FFFF00";
             document.getElementById("five1").style.borderWidth = "thick";
             document.getElementById("five1").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 35)) {
+        }
+        else if ((hour == 1) && (minutes < 35)) {
             document.getElementById("three1").style.borderColor = "#FF0000";
             document.getElementById("three1").style.borderWidth = "thick";
             document.getElementById("three1").style.margin = "-4px";
@@ -1024,7 +1040,8 @@ function threeHourDelay() {
             document.getElementById("five2").style.borderColor = "";
             document.getElementById("five2").style.borderWidth = "thin";
             document.getElementById("five2").style.margin = "";
-        } else if ((hour == 12) && (minutes < 15)) {
+        }
+        else if ((hour == 12) && (minutes < 15)) {
             document.getElementById("one2").style.borderColor = "#FF0000";
             document.getElementById("one2").style.borderWidth = "thick";
             document.getElementById("one2").style.margin = "-4px";
@@ -1070,7 +1087,8 @@ function threeHourDelay() {
             document.getElementById("five2").style.borderColor = "#FFFF00";
             document.getElementById("five2").style.borderWidth = "thick";
             document.getElementById("five2").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 35)) {
+        }
+        else if ((hour == 1) && (minutes < 35)) {
             document.getElementById("three2").style.borderColor = "#FF0000";
             document.getElementById("three2").style.borderWidth = "thick";
             document.getElementById("three2").style.margin = "-4px";
@@ -1178,7 +1196,8 @@ function threeHourDelay() {
             document.getElementById("five3").style.borderColor = "";
             document.getElementById("five3").style.borderWidth = "thin";
             document.getElementById("five3").style.margin = "";
-        } else if ((hour == 12) && (minutes < 15)) {
+        }
+        else if ((hour == 12) && (minutes < 15)) {
             document.getElementById("one3").style.borderColor = "#FF0000";
             document.getElementById("one3").style.borderWidth = "thick";
             document.getElementById("one3").style.margin = "-4px";
@@ -1224,7 +1243,8 @@ function threeHourDelay() {
             document.getElementById("five3").style.borderColor = "#FFFF00";
             document.getElementById("five3").style.borderWidth = "thick";
             document.getElementById("five3").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 35)) {
+        }
+        else if ((hour == 1) && (minutes < 35)) {
             document.getElementById("three3").style.borderColor = "#FF0000";
             document.getElementById("three3").style.borderWidth = "thick";
             document.getElementById("three3").style.margin = "-4px";
@@ -1332,7 +1352,8 @@ function threeHourDelay() {
             document.getElementById("five4").style.borderColor = "";
             document.getElementById("five4").style.borderWidth = "thin";
             document.getElementById("five4").style.margin = "";
-        } else if ((hour == 12) && (minutes < 15)) {
+        }
+        else if ((hour == 12) && (minutes < 15)) {
             document.getElementById("one4").style.borderColor = "#FF0000";
             document.getElementById("one4").style.borderWidth = "thick";
             document.getElementById("one4").style.margin = "-4px";
@@ -1378,7 +1399,8 @@ function threeHourDelay() {
             document.getElementById("five4").style.borderColor = "#FFFF00";
             document.getElementById("five4").style.borderWidth = "thick";
             document.getElementById("five4").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 35)) {
+        }
+        else if ((hour == 1) && (minutes < 35)) {
             document.getElementById("three4").style.borderColor = "#FF0000";
             document.getElementById("three4").style.borderWidth = "thick";
             document.getElementById("three4").style.margin = "-4px";
@@ -1486,7 +1508,8 @@ function threeHourDelay() {
             document.getElementById("five5").style.borderColor = "";
             document.getElementById("five5").style.borderWidth = "thin";
             document.getElementById("five5").style.margin = "";
-        } else if ((hour == 12) && (minutes < 15)) {
+        }
+        else if ((hour == 12) && (minutes < 15)) {
             document.getElementById("one5").style.borderColor = "#FF0000";
             document.getElementById("one5").style.borderWidth = "thick";
             document.getElementById("one5").style.margin = "-4px";
@@ -1532,7 +1555,8 @@ function threeHourDelay() {
             document.getElementById("five5").style.borderColor = "#FFFF00";
             document.getElementById("five5").style.borderWidth = "thick";
             document.getElementById("five5").style.margin = "-4px";
-        } else if ((hour == 1) && (minutes < 35)) {
+        }
+        else if ((hour == 1) && (minutes < 35)) {
             document.getElementById("three5").style.borderColor = "#FF0000";
             document.getElementById("three5").style.borderWidth = "thick";
             document.getElementById("three5").style.margin = "-4px";

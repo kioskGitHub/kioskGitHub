@@ -2,27 +2,32 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
     var weeklyList = new Array(5);
     if (weeklyPattern.getAttribute('Pattern_Weekly_M') == "X") {
         weeklyList[0] = true;
-    } else {
+    }
+    else {
         weeklyList[0] = false;
     }
     if (weeklyPattern.getAttribute('Pattern_Weekly_T') == "X") {
         weeklyList[1] = true;
-    } else {
+    }
+    else {
         weeklyList[1] = false;
     }
     if (weeklyPattern.getAttribute('Pattern_Weekly_W') == "X") {
         weeklyList[2] = true;
-    } else {
+    }
+    else {
         weeklyList[2] = false;
     }
     if (weeklyPattern.getAttribute('Pattern_Weekly_TH') == "X") {
         weeklyList[3] = true;
-    } else {
+    }
+    else {
         weeklyList[3] = false;
     }
     if (weeklyPattern.getAttribute('Pattern_Weekly_F') == "X") {
         weeklyList[4] = true;
-    } else {
+    }
+    else {
         weeklyList[4] = false;
     }
 
@@ -45,7 +50,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("one1").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building11").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building11").innerHTML = "New Building";
             }
             if (dayOfWeek == "Monday") {
@@ -78,7 +84,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("two1").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building21").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building21").innerHTML = "New Building";
             }
             if (dayOfWeek == "Monday") {
@@ -111,7 +118,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("three1").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building31").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building31").innerHTML = "New Building";
             }
             if (dayOfWeek == "Monday") {
@@ -143,7 +151,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("four1").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building41").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building41").innerHTML = "New Building";
             }
             if (dayOfWeek == "Monday") {
@@ -175,7 +184,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("five1").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building51").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building51").innerHTML = "New Building";
             }
             if (dayOfWeek == "Monday") {
@@ -207,7 +217,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("six1").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building61").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building61").innerHTML = "New Building";
             }
             if (dayOfWeek == "Monday") {
@@ -239,7 +250,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("seven1").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building71").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building71").innerHTML = "New Building";
             }
             if (dayOfWeek == "Monday") {
@@ -271,7 +283,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("eight1").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building81").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building81").innerHTML = "New Building";
             }
             if (dayOfWeek == "Monday") {
@@ -306,7 +319,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("one2").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building12").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building12").innerHTML = "New Building";
             }
             if (dayOfWeek == "Tuesday") {
@@ -335,7 +349,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("two2").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building22").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building22").innerHTML = "New Building";
             }
             if (dayOfWeek == "Tuesday") {
@@ -367,7 +382,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("three2").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building32").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building32").innerHTML = "New Building";
             }
             if (dayOfWeek == "Tuesday") {
@@ -399,7 +415,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("four2").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building42").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building42").innerHTML = "New Building";
             }
             if (dayOfWeek == "Tuesday") {
@@ -431,7 +448,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("five2").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building52").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building52").innerHTML = "New Building";
             }
             if (dayOfWeek == "Tuesday") {
@@ -463,7 +481,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("six2").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building62").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building62").innerHTML = "New Building";
             }
             if (dayOfWeek == "Tuesday") {
@@ -495,7 +514,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("seven2").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building72").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building72").innerHTML = "New Building";
             }
             if (dayOfWeek == "Tuesday") {
@@ -527,7 +547,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("eight2").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building82").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building82").innerHTML = "New Building";
             }
             if (dayOfWeek == "Tuesday") {
@@ -562,7 +583,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("one3").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building13").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building13").innerHTML = "New Building";
             }
             if (dayOfWeek == "Wednesday") {
@@ -591,7 +613,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("two3").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building23").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building23").innerHTML = "New Building";
             }
             if (dayOfWeek == "Wednesday") {
@@ -623,7 +646,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("three3").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building33").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building33").innerHTML = "New Building";
             }
             if (dayOfWeek == "Wednesday") {
@@ -655,7 +679,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("four3").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building43").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building43").innerHTML = "New Building";
             }
             if (dayOfWeek == "Wednesday") {
@@ -687,7 +712,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("five3").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building53").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building53").innerHTML = "New Building";
             }
             if (dayOfWeek == "Wednesday") {
@@ -719,7 +745,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("six3").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building63").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building63").innerHTML = "New Building";
             }
             if (dayOfWeek == "Wednesday") {
@@ -751,7 +778,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("seven3").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building73").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building73").innerHTML = "New Building";
             }
             if (dayOfWeek == "Wednesday") {
@@ -783,7 +811,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("eight3").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building83").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building83").innerHTML = "New Building";
             }
             if (dayOfWeek == "Wednesday") {
@@ -818,7 +847,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("one4").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building14").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building14").innerHTML = "New Building";
             }
             if (dayOfWeek == "Thursday") {
@@ -847,7 +877,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("two4").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building24").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building24").innerHTML = "New Building";
             }
             if (dayOfWeek == "Thursday") {
@@ -879,7 +910,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("three4").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building34").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building34").innerHTML = "New Building";
             }
             if (dayOfWeek == "Thursday") {
@@ -911,7 +943,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("four4").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building44").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building44").innerHTML = "New Building";
             }
             if (dayOfWeek == "Thursday") {
@@ -943,7 +976,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("five4").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building54").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building54").innerHTML = "New Building";
             }
             if (dayOfWeek == "Thursday") {
@@ -975,7 +1009,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("six4").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building64").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building64").innerHTML = "New Building";
             }
             if (dayOfWeek == "Thursday") {
@@ -1007,7 +1042,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("seven4").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building74").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building74").innerHTML = "New Building";
             }
             if (dayOfWeek == "Thursday") {
@@ -1039,7 +1075,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("eight4").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building84").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building84").innerHTML = "New Building";
             }
             if (dayOfWeek == "Thursday") {
@@ -1074,7 +1111,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("one5").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building15").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building15").innerHTML = "New Building";
             }
             if (dayOfWeek == "Friday") {
@@ -1103,7 +1141,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("two5").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building25").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building25").innerHTML = "New Building";
             }
             if (dayOfWeek == "Friday") {
@@ -1135,7 +1174,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("three5").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building35").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building35").innerHTML = "New Building";
             }
             if (dayOfWeek == "Friday") {
@@ -1167,7 +1207,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("four5").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building45").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building45").innerHTML = "New Building";
             }
             if (dayOfWeek == "Friday") {
@@ -1199,7 +1240,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("five5").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building55").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building55").innerHTML = "New Building";
             }
             if (dayOfWeek == "Friday") {
@@ -1231,7 +1273,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("six5").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building65").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building65").innerHTML = "New Building";
             }
             if (dayOfWeek == "Friday") {
@@ -1263,7 +1306,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("seven5").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building75").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building75").innerHTML = "New Building";
             }
             if (dayOfWeek == "Friday") {
@@ -1295,7 +1339,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
             document.getElementById("eight5").style.backgroundColor = "#2670B8";
             if (locationBuilding == "Main") {
                 document.getElementById("building85").innerHTML = "Old Building";
-            } else if (locationBuilding == "New") {
+            }
+            else if (locationBuilding == "New") {
                 document.getElementById("building85").innerHTML = "New Building";
             }
             if (dayOfWeek == "Friday") {
