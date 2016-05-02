@@ -21,14 +21,51 @@ function loadXMLDoc(ID) {
 
 }
 
+//#####################################
+//date and time for current destination
+//#####################################
+var datetime, dayOfWeek, today;
+
+function dateAndTime() {
+    var currentDate = new Date();
+    // For todays date;
+    Date.prototype.today = function() {
+        return (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" +
+            ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" +
+            this.getFullYear();
+    };
+    //the time now
+    Date.prototype.timeNow = function() {
+        return ((this.getHours() < 10) ? "0" : "") +
+            ((this.getHours() > 12) ? (this.getHours() - 12) : this.getHours()) + ":" +
+            ((this.getMinutes() < 10) ? "0" : "") +
+            this.getMinutes() +
+            ((this.getHours() > 12) ? ('PM') : 'AM');
+    };
+    datetime = currentDate.timeNow();
+    today = currentDate.today();
+    //To get day of the week
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    dayOfWeek = weekday[currentDate.getDay()];
+    document.getElementById("day").innerHTML = today;
+    document.getElementById("time").innerHTML = datetime;
+}
+
 //function to search for specific id
 function myFunction(xml, sID) {
     var xmlDoc = xml.responseXML;
 
     //pick the tag
     var studEID = xmlDoc.getElementsByTagName('Stud_EID');
-    var termName;
-    var userName;
+    var termName, userName;
 
     //search for the tag
     for (i = 0; i < studEID.length; i++) {
@@ -45,73 +82,26 @@ function myFunction(xml, sID) {
             termName = studEID[i].childNodes[0].childNodes[0].getAttribute('Session_Name3');
 
             //DYNAMIC
-            var detailsInstructor1 = "";
-            var courseName1 = "";
-            var classColor;
-            //class 1
-            for (k = 0; k < studEID[i].childNodes[0].childNodes[0].childNodes[0].childNodes.length; k++) {
-                detailsInstructor1 = studEID[i].childNodes[0].childNodes[0]
-                    .childNodes[0].childNodes[k].getAttribute('Instructor');
-                courseName1 = studEID[i].childNodes[0].childNodes[0]
-                    .childNodes[0].childNodes[k].getAttribute('Course_Name3').split("|")[0];
+            var detailsInstructor1, courseName1 = "";
+            //specific course
 
-                for (j = 0; j < studEID[i].childNodes[0].childNodes[0].childNodes[0].childNodes[k].childNodes[1].childNodes.length; j++) {
-                    var course1Time = "";
-                    var locationBuilding = "",
-                        locationRoom = "";
-                    var weeklyPattern = "";
-                    course1Time = studEID[i].childNodes[0].childNodes[0]
-                        .childNodes[0].childNodes[k]
-                        .childNodes[1].childNodes[j].getAttribute('Textbox4').split(" ")[1];
-                    locationBuilding = studEID[i].childNodes[0].childNodes[0]
-                        .childNodes[0].childNodes[k]
-                        .childNodes[1].childNodes[j].getAttribute('Location').split(" ")[1];
-                    locationRoom = studEID[i].childNodes[0].childNodes[0]
-                        .childNodes[0].childNodes[k]
-                        .childNodes[1].childNodes[j].getAttribute('Location').split(" ")[2];
-                    weeklyPattern = studEID[i].childNodes[0].childNodes[0]
-                        .childNodes[0].childNodes[k]
-                        .childNodes[1].childNodes[j]
-                        .childNodes[0];
-                    //#####################################
-                    //date and time for current destination
-                    //#####################################
-                    var datetime;
-                    var dayOfWeek;
-                    var today;
+            var detailsInfo = studEID[i].childNodes[0].childNodes[0].childNodes[0].childNodes;
 
-                    function dateAndTime() {
-                        var currentDate = new Date();
-                        // For todays date;
-                        Date.prototype.today = function() {
-                            return (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" +
-                                ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" +
-                                this.getFullYear();
-                        };
-                        //the time now
-                        Date.prototype.timeNow = function() {
-                            return ((this.getHours() < 10) ? "0" : "") +
-                                ((this.getHours() > 12) ? (this.getHours() - 12) : this.getHours()) + ":" +
-                                ((this.getMinutes() < 10) ? "0" : "") +
-                                this.getMinutes() +
-                                ((this.getHours() > 12) ? ('PM') : 'AM');
-                        };
-                        datetime = currentDate.timeNow();
-                        today = currentDate.today();
-                        //To get day of the week
-                        var weekday = new Array(7);
-                        weekday[0] = "Sunday";
-                        weekday[1] = "Monday";
-                        weekday[2] = "Tuesday";
-                        weekday[3] = "Wednesday";
-                        weekday[4] = "Thursday";
-                        weekday[5] = "Friday";
-                        weekday[6] = "Saturday";
+            for (k = 0; k < detailsInfo.length; k++) {
+                detailsInstructor1 = detailsInfo[k].getAttribute('Instructor');
+                courseName1 = detailsInfo[k].getAttribute('Course_Name3').split("|")[0];
 
-                        dayOfWeek = weekday[currentDate.getDay()];
-                        document.getElementById("day").innerHTML = today;
-                        document.getElementById("time").innerHTML = datetime;
-                    }
+                //info about said course
+
+                var groupInfo = detailsInfo[k].childNodes[1].childNodes;
+
+                for (j = 0; j < groupInfo.length; j++) {
+                    var course1Time, locationBuilding, locationRoom, weeklyPattern = "";
+                    course1Time = groupInfo[j].getAttribute('Textbox4').split(" ")[1];
+                    locationBuilding = groupInfo[j].getAttribute('Location').split(" ")[1];
+                    locationRoom = groupInfo[j].getAttribute('Location').split(" ")[2];
+                    weeklyPattern = groupInfo[j].childNodes[0];
+
                     dateAndTime();
                     var hourOfDay = datetime.split(":")[0];
                     patternLogic(detailsInstructor1, courseName1,
