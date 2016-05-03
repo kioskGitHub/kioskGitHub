@@ -74,6 +74,16 @@ GRADES#######################
     text-shadow: 0px 0px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
     font-size: 30px;
 }
+#termName {
+    position: absolute;
+    margin-top: 3.9%;
+    left: 42%;
+    z-index: 50;
+    -webkit-text-stroke: 1px deepskyblue;
+    color: black;
+    text-shadow: 0px 0px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    font-size: 30px;
+}
 
 /*day and time*/
 

@@ -76,7 +76,7 @@ function myFunction(xml, sID) {
     var xmlDoc = xml.responseXML;
 
     //pick the tag
-    var letterGrade, percentage, programName, studentFName, studentLName, className;
+    var letterGrade, percentage, programName, studentFName, studentLName, className, termName;
     var m = 0;
     var details = xmlDoc.getElementsByTagName('Details1');
     for (d = 0; d < details.length; d++) {
@@ -87,7 +87,9 @@ function myFunction(xml, sID) {
             programName = details[d].getAttribute('Program_Name');
             studentFName = details[d].getAttribute('Student_First_Name');
             studentLName = details[d].getAttribute('Student_Last_Name');
+            termName = details[d].parentNode.parentNode.parentNode.getAttribute('Textbox29');
             document.getElementById('userName').innerHTML = studentFName + " " + studentLName;
+            document.getElementById('termName').innerHTML = termName;
             className = details[d].parentNode.parentNode.parentNode.getAttribute('Textbox25');
             switch (m) {
                 case 0:

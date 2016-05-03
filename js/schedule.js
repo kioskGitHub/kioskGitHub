@@ -115,5 +115,5 @@ function myFunction(xml, sID) {
 
     //add to html
     document.getElementById("userName").innerHTML = userName;
-    document.getElementById("termName").innerHTML = termName;
+    document.getElementById("termName").innerHTML = termName.split(":")[1];
 }
