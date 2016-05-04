@@ -43,7 +43,7 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
     //2pm = 6
     //3pm = 7
     //4pm = 8
-    var courseTimeNumber;
+    var courseTimeNumber = 0;
     if (courseTime == "8:00:00") {
         courseTimeNumber = 1;
     }
