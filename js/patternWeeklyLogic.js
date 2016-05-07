@@ -190,7 +190,8 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
                                         document.getElementById(pAfter.toString() + d2.toString()).style.borderWidth = "thick";
                                         document.getElementById(pAfter.toString() + d2.toString()).style.margin = "-4px";
                                     }
-                                    if ((hourNow > 1) && (hourNow < 8)) {
+                                    else if ((hourNow > 1) && (hourNow < 8)) {
+                                        console.log(pBefore.toString() + d2.toString());
                                         document.getElementById(pBefore.toString() + d2.toString()).style.borderColor = "Red";
                                         document.getElementById(pBefore.toString() + d2.toString()).style.borderWidth = "thick";
                                         document.getElementById(pBefore.toString() + d2.toString()).style.margin = "-4px";
@@ -201,7 +202,7 @@ function patternLogic(detailsInstructor, courseName, courseTime, locationBuildin
                                         document.getElementById(pAfter.toString() + d2.toString()).style.borderWidth = "thick";
                                         document.getElementById(pAfter.toString() + d2.toString()).style.margin = "-4px";
                                     }
-                                    if (hourNow == 8) {
+                                    else if (hourNow == 8) {
                                         document.getElementById(pBefore.toString() + d2.toString()).style.borderColor = "Red";
                                         document.getElementById(pBefore.toString() + d2.toString()).style.borderWidth = "thick";
                                         document.getElementById(pBefore.toString() + d2.toString()).style.margin = "-4px";
