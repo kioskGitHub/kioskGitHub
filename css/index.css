@@ -78,6 +78,17 @@
     color: black;
     text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
+#logo {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+#icon {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 15%;
+}
 @font-face {
     font-family: candal;
     src: url(../fonts/Candal.ttf);

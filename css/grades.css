@@ -111,6 +111,12 @@ GRADES#######################
     font-size: 35px;
     -webkit-text-stroke: 1px deepskyblue;
 }
+#logoGrades {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    height: 30%;
+}
 
 /*  SECTIONS  */
 
