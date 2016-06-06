@@ -1,14 +1,37 @@
-//********NEED TO MAKE DYNAMIC FROM THE RFID SCANNER
-var studentID = "4719";
+var polled = "/localhost/polled.txt";
+var UID = "";
+var studentID = "";
 
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("Get", file, false);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4) {
+            if ((rawFile.status === 200) || (rawFile.status === 0)) {
+                var allText = rawFile.responseText;
+                UID = allText;
 
+                UID = UID.split(": ")[(UID.length / 38)];
+                UID = (UID.slice(0, 2) + UID.slice(4, 6) + UID.slice(8, 10) + UID.slice(12, 14));
 
-
-//TODO
-//add term name to html
-
-
-
+                //Andy
+                if (UID == "52656bc2") {
+                    studentID = "4769";
+                }
+                //Paco
+                else if (UID == "e2f9462b") {
+                    studentID = "4719";
+                }
+                //Dan
+                else if (UID == "3226472b") {
+                    studentID = "4368";
+                }
+            }
+        }
+    }
+    rawFile.send(null);
+}
+readTextFile(polled);
 
 //####################################
 //load the name and id with student id

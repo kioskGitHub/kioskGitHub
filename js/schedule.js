@@ -1,35 +1,37 @@
-var polled = "/home/pi/kioskGitHub/polledUID/polled.txt";
-var reader = new FileReader();
-
-function FileHelper() {} {
-    FileHelper.readStringFromFileAtPath = function(polled) {
-        var request = new XMLHttpRequest();
-        request.open("GET", polled, false);
-        request.send(null);
-        var returnValue = request.responseText;
-
-        return returnValue;
-    };
-}
-
-var text = FileHelper.readStringFromFileAtPath("mytext.txt");
+var polled = "/localhost/polled.txt";
+var UID = "";
+var studentID = "";
 
 function readTextFile(file) {
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
+    rawFile.open("Get", file, false);
     rawFile.onreadystatechange = function() {
         if (rawFile.readyState === 4) {
-            if (rawFile.status === 200 || rawFile.status === 0) {
+            if ((rawFile.status === 200) || (rawFile.status === 0)) {
                 var allText = rawFile.responseText;
-                alert(allText);
+                UID = allText;
+
+                UID = UID.split(": ")[(UID.length / 38)];
+                UID = (UID.slice(0, 2) + UID.slice(4, 6) + UID.slice(8, 10) + UID.slice(12, 14));
+
+                //Andy
+                if (UID == "52656bc2") {
+                    studentID = "4769";
+                }
+                //Paco
+                else if (UID == "e2f9462b") {
+                    studentID = "4719";
+                }
+                //Dan
+                else if (UID == "3226472b") {
+                    studentID = "4368";
+                }
             }
         }
-    };
+    }
     rawFile.send(null);
 }
 readTextFile(polled);
-var studentID = "4719";
-
 //####################################
 //load the name and id with student id
 //####################################
