@@ -1,4 +1,33 @@
-//********NEED TO MAKE DYNAMIC FROM THE RFID SCANNER
+var polled = "/home/pi/kioskGitHub/polledUID/polled.txt";
+var reader = new FileReader();
+
+function FileHelper() {} {
+    FileHelper.readStringFromFileAtPath = function(polled) {
+        var request = new XMLHttpRequest();
+        request.open("GET", polled, false);
+        request.send(null);
+        var returnValue = request.responseText;
+
+        return returnValue;
+    };
+}
+
+var text = FileHelper.readStringFromFileAtPath("mytext.txt");
+
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status === 0) {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    };
+    rawFile.send(null);
+}
+readTextFile(polled);
 var studentID = "4719";
 
 //####################################
